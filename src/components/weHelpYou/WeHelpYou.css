@@ -1,0 +1,9 @@
+.help-img {
+  height: 26.7rem;
+}
+
+@media screen and (max-width: 500px) {
+  .help-img {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,50 @@
+.informationForm {
+  width: 60%;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: ui-serif;
+}
+
+.paymentForm {
+  width: 60%;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-family: ui-serif;
+}
+
+.paymentForm > h3 {
+  font-weight: 600;
+  font-family: ui-serif;
+}
+
+.products-form {
+  width: 60%;
+  font-family: ui-serif;
+}
+
+.pre-next-btns {
+  width: 45%;
+  margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .informationForm {
+    width: 100%;
+  }
+  .paymentForm {
+    width: 100%;
+  }
+  .pre-next-btns {
+    width: 80%;
+    /* margin: auto; */
+  }
+  .products-form {
+    width: 100%;
+  }
+}

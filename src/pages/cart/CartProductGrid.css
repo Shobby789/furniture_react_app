@@ -1,0 +1,23 @@
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cartTotal {
+  min-width: 300px;
+}
+
+@media screen and (max-width: 500px) {
+  .total {
+    flex-direction: column;
+  }
+  .cartTotal {
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+  }
+  .heading-table {
+    display: none;
+  }
+}

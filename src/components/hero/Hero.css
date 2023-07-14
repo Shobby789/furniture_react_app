@@ -1,0 +1,58 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../images/furniture-template-hero.png");
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-family: ui-serif;
+}
+
+.heading-1 {
+  padding-top: 50px !important;
+}
+
+.heading {
+  margin-left: 0px;
+  font-family: ui-serif;
+  font-weight: 600;
+}
+
+.hero p {
+  width: 55%;
+}
+
+.hero-btns {
+  padding: 0;
+}
+
+@media screen and (max-width: 500px) {
+  .heading-1 {
+    margin-top: 0px;
+  }
+  .hero p {
+    width: 90%;
+  }
+  .heading {
+    margin-left: 20px;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero-btns {
+    padding-left: 17px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 1024px) {
+  .hero {
+    height: 50vh;
+  }
+  .heading-1 {
+    margin-top: 0px;
+  }
+}
