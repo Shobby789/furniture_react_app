@@ -8,7 +8,7 @@ export default function ChooseUs() {
       <div className="container-fluid choose-us mb-5">
         <div className="row">
           <div className="col-lg-7 px-5 pt-5">
-            <h1 className="fs-1 fw-bold mt-3">Why Choose Us</h1>
+            <h1 className="fs-1 fw-bold">Why Choose Us</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
               delectus facere quam repellendus nisi unde. Non exercitationem

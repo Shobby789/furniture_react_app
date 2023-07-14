@@ -29,7 +29,9 @@ export default function WeHelpYou() {
             />
           </div>
           <div className="col-lg-4">
-            <h2 className="fw-bold">We Help You Make Modern Interior Design</h2>
+            <h2 className="fw-bold mt-4">
+              We Help You Make Modern Interior Design
+            </h2>
             <p className="my-3">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Explicabo quas atque dolore autem consequuntur harum debitis
