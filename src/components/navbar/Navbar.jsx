@@ -28,7 +28,7 @@ export default function Navbar() {
             aria-label="Toggle navigation"
           >
             {/* <span className="navbar-toggler-icon" /> */}
-            <i className="bi bi-list-nested fs-3 text-white outline-none border-none"></i>
+            <i className="bi bi-list fs-3 text-white outline-none border-none"></i>
           </button>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
