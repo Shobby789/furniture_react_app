@@ -2,7 +2,6 @@ import React from "react";
 import sofa from "../../images/sofa.png";
 import "./Footer.css";
 import { Link } from "react-router-dom";
-import fiverrLogo from "../../images/fiverr-logo-removebg-preview (1).png";
 
 export default function Footer() {
   return (

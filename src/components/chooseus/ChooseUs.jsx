@@ -60,11 +60,7 @@ export default function ChooseUs() {
             </div>
           </div>
           <div className="col-lg-5 pt-5 text-center">
-            <img
-              src={img}
-              className="img-fluid h-100 rounded chooseUs-img"
-              alt=""
-            />
+            <img src={img} className="img-fluid rounded chooseUs-img" alt="" />
           </div>
         </div>
       </div>

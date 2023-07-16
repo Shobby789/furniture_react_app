@@ -6,7 +6,6 @@ import WeHelpYou from "../components/weHelpYou/WeHelpYou";
 import Blogs from "../components/blogs/Blogs";
 import Footer from "../components/footer/Footer";
 import Testimoials from "../components/testimonials/Testimoials";
-import Carousel from "../components/carousel/Carousel";
 
 export default function Home() {
   return (

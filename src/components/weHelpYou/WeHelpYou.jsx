@@ -12,12 +12,12 @@ export default function WeHelpYou() {
         style={{ background: "#F6F0F0", fontFamily: "ui-serif" }}
       >
         <div className="row">
-          <div className="col-lg-7 col-md-6 col-sm-12 h-100 mb-4">
+          <div className="col-lg-7 col-md-6 col-sm-6 h-100 mb-4">
             <img src={imgGrid1} alt="" className="large-img" />
             <img src={imgGrid2} alt="" className="small-img " />
             <img src={imgGrid3} alt="" className="small-img2" />
           </div>
-          <div className="col-lg-5 h-100 pe-3 py-2">
+          <div className="col-lg-5 col-md-6 h-100 pe-3 py-2">
             <h2 className="help-text fw-bold fs-1">
               We Help You Make Modern Interior Design
             </h2>
