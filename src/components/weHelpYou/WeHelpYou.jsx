@@ -18,7 +18,9 @@ export default function WeHelpYou() {
             <img src={imgGrid3} alt="" className="small-img2" />
           </div>
           <div className="col-lg-5 h-100 pe-3 py-2">
-            <h2 className="help-text">We Help You Make Modern Interior Design</h2>
+            <h2 className="help-text fw-bold fs-1">
+              We Help You Make Modern Interior Design
+            </h2>
             <p className="help-text">
               Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio
               quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
