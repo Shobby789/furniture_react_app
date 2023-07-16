@@ -76,7 +76,10 @@ export default function Footer() {
                   target="_blank"
                   to="https://www.facebook.com/profile.php?id=100047880797925"
                 >
-                  <i className="bi bi-facebook text-dark"></i>
+                  <i
+                    className="bi bi-facebook"
+                    style={{ color: "#32564c" }}
+                  ></i>
                 </Link>
               </span>
               <span className="bg-silver mx-2 fs-5">
@@ -84,7 +87,7 @@ export default function Footer() {
                   target="_blank"
                   to="https://www.linkedin.com/in/muhammad-shoaib-mern-stack-developer/"
                 >
-                  <i className="bi bi-twitter text-dark"></i>
+                  <i className="bi bi-twitter" style={{ color: "#32564c" }}></i>
                 </Link>
               </span>
               <span className="bg-silver mx-2 fs-5">
@@ -92,7 +95,10 @@ export default function Footer() {
                   target="_blank"
                   to="https://www.instagram.com/iam_shoaibmemon/"
                 >
-                  <i className="bi bi-instagram text-dark"></i>
+                  <i
+                    className="bi bi-instagram"
+                    style={{ color: "#32564c" }}
+                  ></i>
                 </Link>
               </span>
               <span className="bg-silver mx-2 fs-5">
@@ -100,7 +106,10 @@ export default function Footer() {
                   target="_blank"
                   to="https://www.linkedin.com/in/muhammad-shoaib-mern-stack-developer/"
                 >
-                  <i className="bi bi-linkedin text-dark"></i>
+                  <i
+                    className="bi bi-linkedin"
+                    style={{ color: "#32564c" }}
+                  ></i>
                 </Link>
               </span>
             </div>
