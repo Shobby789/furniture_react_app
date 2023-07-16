@@ -1,6 +1,8 @@
 import React from "react";
 import sofa from "../../images/sofa.png";
 import "./Footer.css";
+import { Link } from "react-router-dom";
+import fiverrLogo from "../../images/fiverr-logo-removebg-preview (1).png";
 
 export default function Footer() {
   return (
@@ -70,16 +72,36 @@ export default function Footer() {
             </p>
             <div>
               <span className="bg-silver mx-2 fs-5">
-                <i className="bi bi-facebook"></i>
+                <Link
+                  target="_blank"
+                  to="https://www.facebook.com/profile.php?id=100047880797925"
+                >
+                  <i className="bi bi-facebook text-dark"></i>
+                </Link>
               </span>
               <span className="bg-silver mx-2 fs-5">
-                <i className="bi bi-twitter"></i>
+                <Link
+                  target="_blank"
+                  to="https://www.linkedin.com/in/muhammad-shoaib-mern-stack-developer/"
+                >
+                  <i className="bi bi-twitter text-dark"></i>
+                </Link>
               </span>
               <span className="bg-silver mx-2 fs-5">
-                <i className="bi bi-instagram"></i>
+                <Link
+                  target="_blank"
+                  to="https://www.instagram.com/iam_shoaibmemon/"
+                >
+                  <i className="bi bi-instagram text-dark"></i>
+                </Link>
               </span>
               <span className="bg-silver mx-2 fs-5">
-                <i className="bi bi-linkedin"></i>
+                <Link
+                  target="_blank"
+                  to="https://www.linkedin.com/in/muhammad-shoaib-mern-stack-developer/"
+                >
+                  <i className="bi bi-linkedin text-dark"></i>
+                </Link>
               </span>
             </div>
           </div>
