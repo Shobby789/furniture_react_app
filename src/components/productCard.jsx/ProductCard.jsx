@@ -25,7 +25,7 @@ export default function ProductCard({ id, name, price, image }) {
             className="btn btn-dark rounded-circle py-2 px-3"
             onClick={() => dispatch(addToCart({ id, name, image, price }))}
           >
-            <i class="bi bi-plus fs-5"></i>
+            <i className="bi bi-plus fs-5"></i>
           </button>
         </div>
       </div>
