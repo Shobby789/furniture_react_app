@@ -1,9 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import sofa from "../../images/sofa.png";
 import "./Footer.css";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 
 export default function Footer() {
+  const [sub, setSub] = useState({ name: "", email: "" });
+  const handleOnChange = (e) => {
+    const name = e.target.name;
+    const value = e.target.value;
+    setSub((values) => ({ ...values, [name]: value }));
+  };
+
+  const handleSubscribe = () => {
+    if (sub.name !== "" && sub.email !== "") {
+      toast.success("Email Subscribed");
+      setSub({ name: "", email: "" });
+    } else {
+      toast.error("Please Enter Your Name and Email");
+    }
+  };
   return (
     <>
       <div
@@ -23,6 +39,9 @@ export default function Footer() {
                   placeholder="Enter your name"
                   className="border border-secondary py-2 px-3 rounded mb-3"
                   style={{ width: 270 }}
+                  name="name"
+                  value={sub.name}
+                  onChange={handleOnChange}
                 />
               </div>
               <div className="col-lg-5 col-sm-12 text-center">
@@ -30,13 +49,17 @@ export default function Footer() {
                   type="email"
                   placeholder="Enter your email"
                   className="border border-secondary py-2 px-3 rounded mb-3"
+                  name="email"
+                  value={sub.email}
+                  onChange={handleOnChange}
                   style={{ width: 270 }}
                 />
               </div>
-              <div className="col-lg-2 col-sm-12 btn-div">
+              <div className="col-lg-2 col-sm-12 btn-div ms-0 ps-0">
                 <button
                   className="py-2 px-4 btn"
                   style={{ background: "#355033" }}
+                  onClick={() => handleSubscribe()}
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

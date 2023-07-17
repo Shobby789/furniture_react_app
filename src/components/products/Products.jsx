@@ -3,8 +3,11 @@ import "./Products.css";
 import product1 from "../../images/product-1.png";
 import product2 from "../../images/product-2.png";
 import product3 from "../../images/product3.png";
+import { addToCart } from "../../redux/cartSlice/cartSlice";
+import { useDispatch } from "react-redux";
 
 export default function Products() {
+  const dispatch = useDispatch();
   return (
     <>
       <div className="container-fluid products pb-5">
@@ -32,7 +35,19 @@ export default function Products() {
               <div className="card-body text-center">
                 <h5 className="card-title">Nordic Chair</h5>
                 <h6 className="card-title">$50.00</h6>
-                <button className="btn btn-dark rounded-circle pb-2 px-3">
+                <button
+                  className="btn btn-dark rounded-circle pb-2 px-3"
+                  onClick={() =>
+                    dispatch(
+                      addToCart({
+                        id: 1,
+                        name: "Nordic Chair",
+                        image: product1,
+                        price: 50,
+                      })
+                    )
+                  }
+                >
                   +
                 </button>
               </div>
@@ -48,7 +63,19 @@ export default function Products() {
               <div className="card-body text-center">
                 <h5 className="card-title">Kruzo Aero Chair</h5>
                 <h6 className="card-title">$50.00</h6>
-                <button className="btn btn-dark rounded-circle pb-2 px-3">
+                <button
+                  className="btn btn-dark rounded-circle pb-2 px-3"
+                  onClick={() =>
+                    dispatch(
+                      addToCart({
+                        id: 2,
+                        name: "Kruzo Aero Chair",
+                        image: product2,
+                        price: 50,
+                      })
+                    )
+                  }
+                >
                   +
                 </button>
               </div>
@@ -64,7 +91,19 @@ export default function Products() {
               <div className="card-body text-center">
                 <h5 className="card-title">Ergonomic Chair</h5>
                 <h6 className="card-title">$50.00</h6>
-                <button className="btn btn-dark rounded-circle pb-2 px-3">
+                <button
+                  className="btn btn-dark rounded-circle pb-2 px-3"
+                  onClick={() =>
+                    dispatch(
+                      addToCart({
+                        id: 3,
+                        name: "Ergonomic Chair",
+                        image: product3,
+                        price: 50,
+                      })
+                    )
+                  }
+                >
                   +
                 </button>
               </div>

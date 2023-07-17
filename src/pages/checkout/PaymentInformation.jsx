@@ -1,15 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./CheckoutDetails.css";
+import { calculateTotalAmount } from "../../redux/cartSlice/cartSlice";
+import { useDispatch, useSelector } from "react-redux";
 
 export default function PaymentInformation({ formDetail, setFormDetail }) {
+  const cart = useSelector((state) => state.allCart);
+  const dispatch = useDispatch();
   const handleOnChange = (e) => {
     const name = e.target.name;
     const value = e.target.value;
     setFormDetail((values) => ({ ...values, [name]: value }));
   };
+  useEffect(() => {
+    dispatch(calculateTotalAmount());
+  }, [cart, dispatch]);
   return (
-    <div>
-      <div className="container-fluid py-3 text-center">
+    <div className="pt-5">
+      <div className="container-fluid pt-5 pb-3 text-center">
         {/* <h3 className="text-center">Payment Information</h3> */}
         <form className="paymentForm border-1 bg-white rounded py-5 px-5 mx-auto">
           <h3 className="mx-auto">Final step, make the payment</h3>
@@ -72,11 +79,11 @@ export default function PaymentInformation({ formDetail, setFormDetail }) {
               for="exampleInputEmail1"
               className="form-label float-start ms-1"
             >
-              Amount
+              Total Amount Payable
             </label>
             <input
               type="text"
-              placeholder="$150.00"
+              placeholder={`$ ${cart.cartTotalAmount + 10}.00`}
               disabled
               className="form-control w-100 ms-1 p-2 border-1 rounded bg-white"
             />
