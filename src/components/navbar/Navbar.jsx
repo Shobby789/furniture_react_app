@@ -9,7 +9,11 @@ export default function Navbar() {
     <>
       <nav
         className="navbar navbar-expand-lg bg-none w-100"
-        style={{ background: "#0c3b2e" }}
+        style={{
+          background: "#0c3b2e",
+          zIndex: "100000",
+          position: "absolute",
+        }}
       >
         <div className="container-fluid">
           <Link

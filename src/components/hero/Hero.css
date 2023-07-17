@@ -5,6 +5,9 @@
   background-position: center;
   background-size: cover;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero h1 {
@@ -12,18 +15,16 @@
   font-family: ui-serif;
 }
 
-.heading-1 {
-  padding-top: 50px !important;
-}
-
 .heading {
   margin-left: 0px;
   font-family: ui-serif;
   font-weight: 600;
+  /* margin-top: 70px; */
 }
 
 .hero p {
   width: 55%;
+  margin-top: 10px;
 }
 
 .hero-btns {
@@ -32,10 +33,12 @@
 
 @media screen and (max-width: 500px) {
   .heading-1 {
-    margin-top: 0px;
+    margin-top: 60px;
+    margin-bottom: 0px;
   }
   .hero p {
     width: 90%;
+    margin-top: 20px;
   }
   .heading {
     margin-left: 20px;

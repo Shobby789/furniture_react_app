@@ -4,8 +4,8 @@ import "./Hero.css";
 export default function Hero() {
   return (
     <>
-      <div className="container-fluid hero w-100">
-        <div className="container pt-5 h-100">
+      <div className="container-fluid hero w-100" style={{ zIndex: "10" }}>
+        <div className="container pt-5 h-100 d-flex flex-column justify-content-center">
           <h1 className="text-white heading-1 heading" data-aos="fade-up">
             Modern Furniture <br />
             Design Studio
