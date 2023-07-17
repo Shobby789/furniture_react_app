@@ -4,6 +4,7 @@ import { toast } from "react-toastify";
 import CartCheckout from "./CartCheckout";
 import PersonalInformation from "./PersonalInformation";
 import PaymentInformation from "./PaymentInformation";
+import { useNavigate } from "react-router-dom";
 
 export default function CheckoutDetails() {
   const [formDetail, setFormDetail] = useState({
@@ -26,9 +27,11 @@ export default function CheckoutDetails() {
   const handleBack = () => {
     setCount((count) => count - 1);
   };
-
+  const navigate = useNavigate();
   const handleOrder = () => {
+    navigate("/placeorder");
     toast.info("Order has been placed successfully");
+    localStorage.clear();
   };
 
   return (

@@ -15,6 +15,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
+import OrderPlaced from "./pages/orderPlaced/OrderPlaced";
 // ..
 AOS.init({
   offset: 20, // offset (in px) from the original trigger point
@@ -52,6 +53,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/checkout" element={<Checkout />} />
+        <Route path="/placeorder" element={<OrderPlaced />} />
       </Routes>
     </Router>
   );

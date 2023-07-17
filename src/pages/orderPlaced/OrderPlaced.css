@@ -1,0 +1,27 @@
+.msg-section {
+  width: 60%;
+  /* border: 1px solid black; */
+  /* text-align: center; */
+  background: white;
+  border-radius: 20px;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .msg-section {
+    width: 80%;
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .msg-section {
+    width: 95%;
+    text-align: center;
+    padding: 0 20px;
+  }
+}

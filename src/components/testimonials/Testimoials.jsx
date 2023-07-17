@@ -34,7 +34,7 @@ export default function Testimoials() {
           />
         </div>
         <div className="carousel-inner" style={{ fontFamily: "ui-serif" }}>
-          <div className="carousel-item active c-item" data-bs-interval={3000}>
+          <div className="carousel-item active c-item" data-bs-interval={2000}>
             <img src={silverBg} className="d-block w-100 c-img" alt="..." />
             <div className="carousel-caption d-md-block">
               <h1 className="testimonial-heading fw-bold">Testimonials</h1>
