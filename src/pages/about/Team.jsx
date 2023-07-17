@@ -1,7 +1,7 @@
 import React from "react";
 import profile1 from "../../images/profile1.jpg";
-import profile2 from "../../images/profile1.jpg";
-import profile3 from "../../images/profile4.jpg";
+import profile2 from "../../images/profile2.jpg";
+import profile3 from "../../images/tst-profile.jpg";
 import profile4 from "../../images/profile4.jpg";
 import TeamMemberCard from "../../components/teamMemberCard/TeamMemberCard";
 
@@ -34,11 +34,12 @@ export default function Team() {
   ];
   return (
     <>
-      <div className="container-fluid d-flex justify-content-around align-items-center py-5">
+      <div className="container-fluid d-flex justify-content-around align-items-center flex-wrap py-5">
         {teamMembers.map((member) => {
           return (
             <TeamMemberCard
               id={member.id}
+              key={member.id}
               name={member.name}
               designation={member.designation}
               image={member.image}
