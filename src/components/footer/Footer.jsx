@@ -28,7 +28,7 @@ export default function Footer() {
       >
         <div className="row">
           {/* Subscription form */}
-          <div className="col-lg-7 pt-5">
+          <div className="col-lg-7 col-md-6 pt-5 text-center">
             <h5 className="mb-3 fs-4 fw-semibold news-letter-heading">
               <i className="bi bi-envelope fs-4"></i> Subscribe to Newsletter
             </h5>
@@ -44,7 +44,7 @@ export default function Footer() {
                   onChange={handleOnChange}
                 />
               </div>
-              <div className="col-lg-5 col-sm-12 text-center">
+              <div className="col-lg-5 col-sm-12 emailBox">
                 <input
                   type="email"
                   placeholder="Enter your email"
@@ -77,12 +77,12 @@ export default function Footer() {
           </div>
 
           {/* footer sofa image */}
-          <div className="col-lg-5 text-center">
+          <div className="col-lg-5 col-md-6 text-center">
             <img src={sofa} alt="" style={{ maxWidth: 300, maxHeight: 300 }} />
           </div>
         </div>
         <div className="row">
-          <div className="col-lg-4 px-5 text-justify">
+          <div className="col-lg-4 col-md-6 col-sm-12 px-5 text-justify">
             <h1 className="fw-bold" style={{ color: "#355033" }}>
               Furni.
             </h1>
@@ -136,7 +136,7 @@ export default function Footer() {
               </span>
             </div>
           </div>
-          <div className="col-lg-2 col-sm-6 pt-3 text-center">
+          <div className="col-lg-2 col-md-6 col-sm-6 pt-3 text-center">
             <p>
               <a href="/aboutus" className="text-decoration-none text-dark">
                 About us
@@ -158,7 +158,7 @@ export default function Footer() {
               </a>
             </p>
           </div>
-          <div className="col-lg-2 col-sm-6 pt-3 text-center">
+          <div className="col-lg-2 col-md-4 col-sm-6 mt-3 pt-3 text-center">
             <p>
               <a href="/support" className="text-decoration-none text-dark">
                 Support
@@ -175,7 +175,7 @@ export default function Footer() {
               </a>
             </p>
           </div>
-          <div className="col-lg-2 col-sm-6 pt-3 text-center">
+          <div className="col-lg-2 col-md-4 col-sm-6 mt-3 pt-3 text-center">
             <p>
               <a href="/jobs" className="text-decoration-none text-dark">
                 Jobs
@@ -197,7 +197,7 @@ export default function Footer() {
               </a>
             </p>
           </div>
-          <div className="col-lg-2 pt-3 text-center">
+          <div className="col-lg-2 col-md-4 mt-3 pt-3 text-center">
             <p>
               <a href="/products" className="text-decoration-none text-dark">
                 Nordic Chair
@@ -216,19 +216,26 @@ export default function Footer() {
           </div>
         </div>
         <hr />
-        <div className="container d-flex justify-content-between">
-          <p>Copyright ©2023. All Rights Reserved. — Designed with love.</p>
-          <p>
-            <a
-              href="/terms&conditions"
-              className="text-decoration-none text-dark mx-2"
-            >
-              Terms & Conditions
-            </a>
-            <a href="/privacy" className="text-decoration-none text-dark mx-2">
-              Privacy Policy
-            </a>
-          </p>
+        <div className="row">
+          <div className="col-sm-12 col-md-6 col-lg-6 text-center">
+            <p>Copyright ©2023. All Rights Reserved. — Designed with love.</p>
+          </div>
+          <div className="col-sm-12 col-md-6 col-lg-6 text-center">
+            <p>
+              <a
+                href="/terms&conditions"
+                className="text-decoration-none text-dark mx-2"
+              >
+                Terms & Conditions
+              </a>
+              <a
+                href="/privacy"
+                className="text-decoration-none text-dark mx-2"
+              >
+                Privacy Policy
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </>

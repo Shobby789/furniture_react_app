@@ -6,14 +6,14 @@ export default function CartCheckout() {
   const cart = useSelector((state) => state.allCart);
 
   return (
-    <>
+    <div className=" pt-5">
       {/* <h4 className="text-center fw-bold">Your Selected Products</h4> */}
       <div
-        className="container products-form py-2 rounded bg-white mb-3"
+        className="container products-form py-2 rounded bg-white mt-5 pt-5 mb-3"
         style={{ minHeight: "70vh" }}
       >
         <h3 className="text-center mb-5 fw-bold">Your Selected Products</h3>
-        <div className="row">
+        <div className="row names mb-3">
           <div className="col-lg-3 col-sm-3 text-center fw-semibold">
             <p>Product</p>
           </div>
@@ -54,6 +54,6 @@ export default function CartCheckout() {
             );
           })}
       </div>
-    </>
+    </div>
   );
 }

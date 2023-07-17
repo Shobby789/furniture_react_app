@@ -16,28 +16,16 @@ export default function ProductGrid() {
         className="container mt-5 d-flex justify-content-center align-items-center"
         data-aos="fade-up"
       >
-        <button
-          className="btn border borer-dark mx-3 px-5 fs-6"
-          onClick={() => setItems(products)}
-        >
+        <button className="btn" onClick={() => setItems(products)}>
           All Products
         </button>
-        <button
-          className="btn border borer-dark mx-3 px-5 fs-6"
-          onClick={() => filterProducts("chair")}
-        >
+        <button className="btn" onClick={() => filterProducts("chair")}>
           Single Chair
         </button>
-        <button
-          className="btn border borer-dark mx-3 px-5 fs-6"
-          onClick={() => filterProducts("sofa")}
-        >
+        <button className="btn" onClick={() => filterProducts("sofa")}>
           Single Sofa
         </button>
-        <button
-          className="btn border borer-dark mx-3 px-5 fs-6"
-          onClick={() => filterProducts("bed")}
-        >
+        <button className="btn" onClick={() => filterProducts("bed")}>
           Beds
         </button>
       </div>

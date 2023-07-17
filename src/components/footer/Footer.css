@@ -1,5 +1,5 @@
 .news-letter-heading {
-  /* text-align: start; */
+  text-align: start;
   padding-left: 30px;
 }
 
@@ -16,6 +16,15 @@
     padding-left: 10px;
   }
   .btn-div {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .emailBox {
+    padding-left: 40px;
+  }
+  .news-letter-heading {
     text-align: center;
   }
 }

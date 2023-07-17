@@ -40,34 +40,34 @@ export default function PaymentInformation({ formDetail, setFormDetail }) {
               onChange={handleOnChange}
             />
           </div>
-          <div className="input-grp w-100 d-flex justify-content-between flex-wrap mb-3">
-            <div className="w-50">
+          <div className="row py-2 w-100 px-0 mb-3">
+            <div className="col-lg-6 col-md-6 col-sm-12 p-0 pe-1">
               <label
                 for="exampleInputEmail1"
-                className="form-label float-start ms-1"
+                className="form-label float-start"
               >
                 Expiry
               </label>
               <input
                 type="text"
                 placeholder="19/25"
-                className="form-control w-100 me-1 p-2 border-1 outline-none rounded"
+                className="form-control p-2 border-1 outline-none rounded"
                 value={formDetail.expiry}
                 name="expiry"
                 onChange={handleOnChange}
               />
             </div>
-            <div className="w-50">
+            <div className="col-lg-6 col-md-6 col-sm-12 px-0 ps-1">
               <label
                 for="exampleInputEmail1"
-                className="form-label float-start ms-1"
+                className="form-label float-start"
               >
                 CVC
               </label>
               <input
                 type="text"
                 placeholder="x x x"
-                className="form-control w-100 ms-1 p-2 border-1 outline-none rounded"
+                className="form-control p-2 border-1 outline-none rounded"
                 value={formDetail.cvc}
                 name="cvc"
                 onChange={handleOnChange}

@@ -7,13 +7,12 @@ export default function PersonalInformation({ formDetail, setFormDetail }) {
     setFormDetail((values) => ({ ...values, [name]: value }));
   };
   return (
-    <div>
+    <div className="pt-5">
       <div className="container fluid py-2 text-center">
-        {/* <h3 className="text-center">Personal Information</h3> */}
         <form className="informationForm m-3 py-5 px-3 mx-auto bg-white rounded">
           <h3 className="text-center mb-5 fw-semibold">Personal Information</h3>
-          <div className="hstack p-2 mb-3 d-flex justify-content-evenly">
-            <div className="w-50 mx-1">
+          <div className="row mb-3">
+            <div className="col-lg-6 col-md-6 col-sm-12">
               <label
                 for="exampleInputEmail1"
                 className="form-label float-start ms-1"
@@ -30,7 +29,7 @@ export default function PersonalInformation({ formDetail, setFormDetail }) {
                 required
               />
             </div>
-            <div className="w-50 mx-1">
+            <div className="col-lg-6 col-md-6 col-sm-12 lastName">
               <label
                 for="exampleInputEmail1"
                 className="form-label float-start ms-1"
@@ -40,7 +39,7 @@ export default function PersonalInformation({ formDetail, setFormDetail }) {
               <input
                 type="text"
                 placeholder="Last Name"
-                className="form-control w-100 p-2 border-1 outline-none rounded"
+                className="form-control p-2 border-1 outline-none rounded"
                 name="lastName"
                 value={formDetail.lastName}
                 onChange={handleOnChange}
@@ -69,16 +68,16 @@ export default function PersonalInformation({ formDetail, setFormDetail }) {
           </div>
 
           {/* City & State */}
-          <div className="hstack p-2 mb-3 d-flex justify-content-evenly px-2">
-            <div className="w-50 mx-1">
+          <div className="row mb-3 w-100">
+            <div className="col-lg-6 col-md-6 col-sm-12">
               <label
                 for="exampleInputEmail1"
-                className="form-label float-start ms-1"
+                className="form-label float-start"
               >
                 City
               </label>
               <select
-                className="form-select w-100 border-1"
+                className="form-select border-1"
                 aria-label="Default select example"
                 name="city"
                 value={formDetail.city}
@@ -91,15 +90,15 @@ export default function PersonalInformation({ formDetail, setFormDetail }) {
                 <option value="3">Lahore</option>
               </select>
             </div>
-            <div className="w-50 mx-1">
+            <div className="col-lg-6 col-md-6 col-sm-12">
               <label
                 for="exampleInputEmail1"
-                className="form-label float-start ms-1"
+                className="form-label float-start"
               >
                 State
               </label>
               <select
-                className="form-select w-100 border-1"
+                className="form-select border-1"
                 aria-label="Default select example"
                 name="state"
                 value={formDetail.state}
@@ -115,8 +114,8 @@ export default function PersonalInformation({ formDetail, setFormDetail }) {
           </div>
 
           {/* Email & Phone */}
-          <div className="hstack p-2 mb-3">
-            <div className="w-50 mx-1">
+          <div className="row w-100 mb-3">
+            <div className="col-lg-6 col-md-6 col-sm-12">
               <label
                 for="exampleInputEmail1"
                 className="form-label float-start"
@@ -134,7 +133,7 @@ export default function PersonalInformation({ formDetail, setFormDetail }) {
                 required
               />
             </div>
-            <div className="w-50 mx-1">
+            <div className="col-lg-6 col-md-6 col-sm-12">
               <label
                 for="exampleInputEmail1"
                 className="form-label float-start"

@@ -52,8 +52,8 @@ export default function CartProduct({ id, name, price, image, quantity }) {
               className="btn"
               onClick={() => dispatch(removeItem({ id, name, price, image }))}
             >
-              {/* <i className="bi bi-x-lg"></i> */}
-              <i class="bi bi-trash fs-4"></i>
+              <i className="bi bi-x-lg"></i>
+              {/* <i class="bi bi-trash fs-4"></i> */}
             </button>
           </div>
         </div>
